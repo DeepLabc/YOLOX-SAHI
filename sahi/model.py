@@ -268,6 +268,8 @@ class YoloXDetectionModel(DetectionModel):
         if (len(prediction_result) != 0):
             for i in range(len(prediction_result)):
                 top_left =  [slice_box[i][0],slice_box[i][1]]
+                if prediction_result[i] is None:
+                    continue
                 prediction = prediction_result[i].cpu()
                 bboxes = prediction[:,0:4]
                 bboxes /= min(self.image_size[0] / min(slice_size[0], init_image.shape[0]), self.image_size[1] / min(slice_size[1], init_image.shape[1]))
