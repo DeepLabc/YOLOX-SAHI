@@ -44,7 +44,7 @@ single_image_input vs batch_image_input
 
 * clone this repo
 ```
-git clone https://github.com/YiguanLiao/YOLOX-SAHI.git
+git clone https://github.com/DP-GGG/YOLOX-SAHI.git
 ```
 
 ```
