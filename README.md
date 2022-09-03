@@ -1,7 +1,7 @@
 # YOLOX-SAHI
 this repo mainly uses YOLOX to perform batch inference/slice inference on high-resolution images with SAHI
 
-[SAHI](https://github.com/obss/sahi) is useful for small target detection in high-resolution images, it can be simply understood as splitting the picture and then inferring. Note that the original SAHI is inferred one by one, so the reasoning time is multiplied, if your resources permit, you can use batch-inference to obtain all the detection results one time. The following is a comparison of the results.
+[SAHI](https://github.com/obss/sahi) is useful for small target detection in high-resolution images, it can be simply understood as splitting the picture and then inferring. Note that the original SAHI is inferred one by one, so the inference stage is too slow, if your resources permit, you can use batch-inference to obtain all the detection results one time. The following is a comparison of the results.
 
 
 |   Left   | Right |
